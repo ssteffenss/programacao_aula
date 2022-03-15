@@ -1,0 +1,44 @@
+body {
+    background: url('https://c.tenor.com/MhIARALUqvAAAAAd/ednaldo-pereira-vale-nada.gif');
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+h1 {
+    text-shadow: 2px 2px rgb(255, 255, 255);
+  }
+
+  a {
+
+    background-color: #ffee00	;
+}
+
+ #div1 {
+    top: 400px; 
+     background-color: #ff0000	;
+     position: relative;
+     right: -25px;
+     width: 350px;
+     border: 5px solid #0400fd;
+ }   
+ 
+ #div2 { margin-top: 250px;
+ }
+
+ #div4 {
+    top: 300px;
+    background-color: cyan;
+    position: relative;
+    right: -750px;
+    width: 350px;
+    border: 5px solid #ff9100;
+}   
+
+#div5 {
+    top: 200px;
+    background-color: rgb(255, 0, 212);
+    position: relative;
+    right: -1400px;
+    width: 350px;
+    border: 5px solid #00ff15;
+}   
