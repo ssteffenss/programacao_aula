@@ -1,32 +1,43 @@
-"use strict"
+var sec=0
+var min=0
+var hr=0
 
-var hh = 0;
-var mm = 0;
-var ss = 0;
+var interval
 
-var tempo = 1000;
-var cron;
-
-
-function start() {
-
-    cron = setInterval(() => {timer(); }, tempo);
-
-
+function twoDigits(digit){
+    if(digit<10){
+        return('0'+digit)
+    }else{
+        return(digit)
+    }
 }
 
-function pause() {
-    clearInterval(cron);
+function start(){
+   interval= setInterval(watch,10)
+}
+
+function pause(){
+    clearInterval(interval)
 }
 
 function stop(){
-    clearInterval(cron);
-     hh = 0;
- mm = 0;
-ss = 0;
+    clearInterval(interval)
+    sec=0
+    min=0
+    document.getElementById('watch').innerText='00:00:00'
+
 
 }
 
-function timer() {
-
-} 
+function watch(){
+    sec++
+    if(sec==60){
+        min++
+        sec=0
+        if(min==60){
+            min=0
+            hr++
+        }
+    }
+     document.getElementById('watch').innerText=twoDigits(hr)+':'+twoDigits(min)+':'+twoDigits(sec)
+}

@@ -4,66 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cronometro</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="cron.css">
 </head>
-
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-    }
-
-    .max-width{
-        max-width: 500px;
-        width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-        background-color: white;
-        box-shadow: 0 0 5px white;
-        text-align: center;
-    }
-
-    h1{
-        font-family: 'courier new', courier, monospace;
-        margin-top: 20px;
-    }
-
-    button{
-        padding: 10px;
-        border: none;
-        font-family: 'segoe ui';
-        font-size: 1.1em;
-        transition: all .5s;
-        cursor: pointer;
-        border-radius: 25px;
-    }
-
-    button:hover {
-        background-color: rgb(9, 5, 255);
-    }
-
-    .bg-green {
-        background-color: rgb(7, 209, 7);
-    }
-
-    .bg-yellow {
-        background-color: yellow;
-    }
-
-    .bg-red {
-        background-color: red;
-    }
-</style>
 <body>
-
-    <div class="max-width">
-        <button onclick="start();" class="bg-green">Iniciar</button>
-        <button onclick="pause();" class="bg-yellow">Pausar</button>
-        <button onclick="stop();" class="bg-red">Parar</button>
-        <h1 id="counter">00:00:00</h1>
+    <div>
+    <h1 id='watch'>00:00:00<h1>
+    <button class="start-btn" onclick="start()">Iniciar</button>
+    <button class="pause-btn" onclick="pause()">Pausar</button>
+    <button class="stop-btn" onclick="stop()">Parar</button>
     </div>
-
-<script src="cron.js"></script>
-    
+    <script src="cron.js"></script>
 </body>
 </html>
