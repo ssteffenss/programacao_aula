@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background-image: linear-gradient(blue, purple 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.container header{
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+}
+.container .campoInput{
+    margin: 25px 0;
+    width: 100%;
+    display: flex;
+    height: 45px;
+}
+.campoInput input{
+    width: 85%;
+    height: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 20px;
+    padding-left: 17px;
+    transition: all 0.5s;
+}
+.campoInput input:focus{
+    border-color: blue;
+}
+.campoInput button{
+    width: 50px;
+    height: 100%;
+    border: none;
+    color: rgb(255, 255, 255);
+    margin-left: 8px;
+    font-size: 23px;
+    outline: none;
+    background: rgb(69, 69, 248);
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 0.5;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.campoInput button.active{
+    opacity: 1;
+     pointer-events: auto;
+}
+
+.container .todoList{
+    max-height: 250px;
+    overflow-y: auto;
+ }
+ .todoList li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 8px;
+    background: #f2f2f2;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: default;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.todoList li .icon{
+    position: absolute;
+    right: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #e74c3c;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.todoList li:hover .icon{
+    right: 0px;
+}
+.container .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer button{
+    padding: 6px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 5px;
+    background: #0084ff;
+    cursor: pointer;
+    user-select: none;
+    opacity: 0.5;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+.footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
