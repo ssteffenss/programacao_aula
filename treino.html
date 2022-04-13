@@ -6,21 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="treino.css">
     <script src="treino.js"></script>
-    <title>Document</title>
+    <title>IMC</title>
 </head>
-<body>
-    <div class="01">
+<body> 
+
+    <div class="fundo">
+        <h1> Calcule seu IMC</h1>
+        <h1 class ="pav">Resultado:</h1>
+
         <table> 
             <tr>
-                <button class="botao" onclick="start()">nome</button>
-                <button class="botao" onclick="pause()">Pausar</button>
-                <button class="botao" onclick="stop()">Parar</button>
+                <button class="botao" >Nome</button>
+                <button class="botao" >Peso(kg)</button>
+                <button class="botao" >Altura(cm)</button>
             </tr>
-            <tr>
-                <td><button class="botao" onclick="insert()">Enviar</button></td>
-            </tr>
+           
         </table>
+        <td><button class="botaoe" onclick="calcularImc()">Enviar</button></td>
     </div>
+    <input type="text" id="epeso" />
+    <input type="text" id="enome" />
+    <input type="text" id="ealtura" />
+    <input readonly type="text" id="eresultado" />
     
 </body>
 </html>

@@ -1,7 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: linear-gradient(45deg, black, blue);
             height: 100vh; 
             color: white;
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
+}   
+
+.botao {
+    text-align: center;
+    margin: 40px;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    border-radius: 7px;
 }
+
+.botaoe {  
+    position: absolute; 
+    margin: 30px;
+    width: 90px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    border-radius: 7px;
+    top: 50%;
+    left: 40%;
+}
+
+.botaoe:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.fundo{
+    height: 70vh;
+    width: 90vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 15px;
+}
+#enome {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    border: none;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    padding: 5px;
+    top: 33%;
+    left: -0.8%;
+}
+
+#epeso {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    padding: 5px;
+    top: 33%;
+    left: 25.8%;
+}   
+#ealtura {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    padding: 5px;
+    top: 33%;
+    left: 16.7%;
+} 
+
+#eresultado {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    padding: 5px;
+    top: 67.1%;
+    left: -12%;
+}
+
+.pav{
+    position: relative;
+    top: 70%;
+    left: -30%;
+}
+
+
+
